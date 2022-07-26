@@ -126,7 +126,7 @@ body{
 </head>
 <body class="body1">
     <div class="navbar navbar-expand-lg navbar-light  navi">
-        <a class="navbar-brand brand1" href="#" style="color: white;">Fake News Predictor</a>
+        <a class="navbar-brand brand1" href="/" style="color: white;">Fake News Predictor</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -142,17 +142,8 @@ body{
         </div>
     </div>
 
-    <!-- <div class="container">
-        <form action="{{ url_for('predict')}}" method="post">
-            <input type="textfield" name="message" class="textare" placeholder="News.....!"><br>
-            <textarea name="message" class="textare" placeholder="News.....!"></textarea><br>
-            <input type="submit" class="but" value="Predict">
-        </form>
-        <h2>{{prediction}}</h2>
-    </div> -->
-
     <div class="box">
-        <form action="{{ url_for('predict')}}" method="post" >
+        <form action="{{ url_for('predict')}}" method="POST" >
         <div class="input-container">
             <input type="text" name="message"/>
             <label>NEWS</label>		
@@ -161,7 +152,6 @@ body{
             <input type="mail" >
             <label>Author</label>
         </div>
-            <!-- <button type="button" class="btn" value="Predict">submit</button> -->
             <input type="submit" class="btn" value="Predict">
     </form>	
     <h4 style="color: white; padding: 30px 0 0 0;">{{prediction}}</h4>
