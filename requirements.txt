@@ -19,10 +19,10 @@ scikit-learn==1.0.1
 scipy==1.7.1
 six==1.14.0
 sklearn==0.0
-sqlparse==0.3.2
-stevedore==3.2.0
-threadpoolctl==3.0.0
-tqdm==4.56.0
-tzdata==2019.5
-Werkzeug==1.2.0
-whitenoise==5.2.0
+sqlparse
+stevedore
+threadpoolctl
+tqdm
+tzdata
+Werkzeug
+whitenoise
